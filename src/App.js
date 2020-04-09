@@ -23,7 +23,7 @@ export default class App extends Component {
     const {i, val: nextValue} = nextState;
     console.log('Value', val);
     console.log('nextValue', nextValue);
-    if (i===0 && val[i] !== nextValue[i]){
+    if (val[i] !== nextValue[i]){
         return true;
     }
     return false;
